@@ -61,7 +61,7 @@ public class Cold extends Temperature {
    Integer command = commandList.get(i);
    if (commmandMap.containsKey(command)||!temperatureMap.containsKey(command)) { // to check only 1 piece of each type is worn and command number is valid
     System.out.println("fail");
-    break;
+    return;
    }
    
    switch (command) {
@@ -101,11 +101,8 @@ public class Cold extends Temperature {
    }
   }
   
-  if (incorrectCommand) {
    if (!temperatureMap.keySet().equals(commmandMap.keySet())) { //to check all items of clothing are put on
     System.out.println("fail");
    }
   }
-  
- }
 }
