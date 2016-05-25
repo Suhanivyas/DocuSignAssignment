@@ -15,15 +15,17 @@ HOT
 COLD
 Comma separated list of numeric commands:
 
-Command Description	HOT Response	COLD Response
-Put on footwear	“sandals”	“boots”
-Put on headwear	“sun visor”	“hat”
-Put on socks	fail	“socks”
-Put on shirt	“t-shirt”	“shirt”
-Put on jacket	fail	“jacket”
-Put on pants	“shorts”	“pants”
-Leave house	“leaving house”	“leaving house”
-Take off pajamas	“Removing PJs”	“Removing PJs”
+Command	Description	HOT Response	COLD Response
+1	      Put on footwear	“sandals”	“boots”
+2	Put on headwear	“sun visor”	“hat”
+3	Put on socks	fail	“socks”
+4	Put on shirt	“t-shirt”	“shirt”
+5	Put on jacket	fail	“jacket”
+6	Put on pants	“shorts”	“pants”
+7	Leave house	“leaving house”	“leaving house”
+8	Take off pajamas	“Removing PJs”	“Removing PJs”
+
+
 Rules:
 
 Initial state is in your house with your pajamas on
