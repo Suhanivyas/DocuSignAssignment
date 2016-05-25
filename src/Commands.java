@@ -35,8 +35,12 @@ public class Commands {
     return false;
    }
    
-   String newS = m.group(2).replace(" ", ""); // remove whitespace from commands
-   for (String s: newS.split(",")) { // split commands on ','
+   String newStr = m.group(2).replace(" ", ""); // remove whitespace from commands
+   if(newStr.length()==0){
+	   System.out.println("fail");
+   		return false;
+   }
+   for (String s: newStr.split(",")) { // split commands on ','
     this.commandList.add(Integer.valueOf(s));
    }
   }
