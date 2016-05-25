@@ -31,7 +31,7 @@ public class Commands {
     inputTemperature = new Cold();
    } 
    else {// input is anything other than hot or cold
-    System.out.println("Fail");
+    System.out.println("fail");
     return false;
    }
    
